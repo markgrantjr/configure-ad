@@ -82,14 +82,53 @@ The output for the DNS settings should show DC-1’s private IP Address
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install Active Directory
+—
+Login to DC-1 and install Active Directory Domain Services
+Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
+Restart and then log back into DC-1 as user: mydomain.com\labuser
+
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  ![Screen Shot 2024-10-14 at 9 14 38 PM](https://github.com/user-attachments/assets/2ab8b650-8d22-4487-bfc9-c6225dfa3cb8)
+![Screen Shot 2024-10-14 at 9 15 20 PM](https://github.com/user-attachments/assets/d0839ad6-11c9-4350-b5c2-e66009771087)
+![Screen Shot 2024-10-14 at 10 02 20 PM](https://github.com/user-attachments/assets/8ef94717-b37d-41bf-8b1b-32a9be9dbbd0)
+![Screen Shot 2024-10-14 at 10 03 02 PM](https://github.com/user-attachments/assets/be8c94c2-e7bc-42d3-9de8-a6d5390f2594)
+![Screen Shot 2024-10-14 at 10 04 27 PM](https://github.com/user-attachments/assets/1bf66784-8896-463c-9c2a-da04ed2522e4)
+![Screen Shot 2024-10-14 at 10 04 39 PM](https://github.com/user-attachments/assets/c675233d-81b9-4a9a-b360-1a8407a3f1b7)
+![Screen Shot 2024-10-14 at 10 05 34 PM](https://github.com/user-attachments/assets/59a3ebb2-7619-49bb-a766-8f4815bfc511)
+![Screen Shot 2024-10-14 at 10 05 56 PM](https://github.com/user-attachments/assets/9379bb3d-98d8-4f1f-887b-6ee886a39ea7)
+![Screen Shot 2024-10-14 at 10 07 01 PM](https://github.com/user-attachments/assets/5049b7ab-ebaf-4d9b-847a-73941c67903a)
+![Screen Shot 2024-10-14 at 10 07 26 PM](https://github.com/user-attachments/assets/6b508827-af09-42c9-b33e-60ab97a59f00)
+![Screen Shot 2024-10-14 at 10 07 52 PM](https://github.com/user-attachments/assets/7463a510-7337-41af-9ea9-8163ab7ff3cb)
+![Screen Shot 2024-10-14 at 10 09 09 PM](https://github.com/user-attachments/assets/cb167ec7-67f7-4b01-b6c2-2404e3f8ab4b)
+![Screen Shot 2024-10-14 at 10 09 43 PM](https://github.com/user-attachments/assets/c5e36f1b-a745-421e-b441-f800647d32b9)
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
+
+</p>
+<p>
+  
+![Screen Shot 2024-10-14 at 10 21 08 PM](https://github.com/user-attachments/assets/2a72e48d-29e6-4be8-96d7-f6144dcbfb1a)
+![Screen Shot 2024-10-14 at 10 23 51 PM](https://github.com/user-attachments/assets/a450fc39-c6be-4e50-bbf2-2ff5335b9e90)
+![Screen Shot 2024-10-14 at 10 24 25 PM](https://github.com/user-attachments/assets/b55b8ee5-f9a7-42c4-859e-40bff551a4df)
+![Screen Shot 2024-10-14 at 10 26 17 PM](https://github.com/user-attachments/assets/6f3aa7a0-da71-47df-9f0b-4fb276e59fae)
+![Screen Shot 2024-10-14 at 10 24 45 PM](https://github.com/user-attachments/assets/569bed20-6e27-45b0-8df5-69fa8e7fe128)
+![Screen Shot 2024-10-14 at 10 26 32 PM](https://github.com/user-attachments/assets/0eb5e7da-3879-421d-b6b4-1057095c9907)
+![Screen Shot 2024-10-14 at 10 29 57 PM](https://github.com/user-attachments/assets/50c739d7-5bec-4d87-9ad9-20c3529a3ca7)
+![Screen Shot 2024-10-18 at 8 47 01 PM](https://github.com/user-attachments/assets/ae403845-8377-4a76-9efe-afa0956991a1)
+
+
+
+
+
+
+
