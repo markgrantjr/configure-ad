@@ -110,7 +110,16 @@ Restart and then log back into DC-1 as user: mydomain.com\labuser
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create a Domain Admin user within the domain
+—
+In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
+Create a new OU named “_ADMINS”
+Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!
+Add jane_admin to the “Domain Admins” Security Group
+Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
+User jane_admin as your admin account from now on
+
+
 </p>
 <br />
 
@@ -125,7 +134,74 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ![Screen Shot 2024-10-14 at 10 26 32 PM](https://github.com/user-attachments/assets/0eb5e7da-3879-421d-b6b4-1057095c9907)
 ![Screen Shot 2024-10-14 at 10 29 57 PM](https://github.com/user-attachments/assets/50c739d7-5bec-4d87-9ad9-20c3529a3ca7)
 ![Screen Shot 2024-10-18 at 8 47 01 PM](https://github.com/user-attachments/assets/ae403845-8377-4a76-9efe-afa0956991a1)
+![Screen Shot 2024-10-18 at 8 54 43 PM](https://github.com/user-attachments/assets/8247c7c3-f98d-4bc4-8971-f466cac7a1d0)
+![Screen Shot 2024-10-18 at 8 56 31 PM](https://github.com/user-attachments/assets/1259d050-98f4-462c-b3cd-dea7b052d755)
 
+</p>
+<p>
+<br />
+
+Join Client-1 to your domain(mydomain.com) 
+Log in to Client-1 as the original local admin and join it to the domain (computer will restart)
+Log in to the Domain Controller and verify Client-1 shows up in ADUC
+Create a new Ou named "_Clients" and drag Client-1 into there
+
+![Screen Shot 2024-10-18 at 9 03 07 PM](https://github.com/user-attachments/assets/bd1215cb-9ecd-4a82-9dcf-eb1ff8f917a8)
+![Screen Shot 2024-10-18 at 9 04 15 PM](https://github.com/user-attachments/assets/72e0735c-dce0-4bf9-8ec9-689e8cfd8a17)
+![Screen Shot 2024-10-18 at 9 05 06 PM](https://github.com/user-attachments/assets/0d121929-e019-4901-9a91-bd5357931422)
+![Screen Shot 2024-10-18 at 9 05 34 PM](https://github.com/user-attachments/assets/4d834f46-e08f-493a-9ea8-b59af6ee1d76)
+![Screen Shot 2024-10-18 at 9 07 00 PM](https://github.com/user-attachments/assets/796bb02e-530e-4dbb-aab4-4f820e25567a)
+![Screen Shot 2024-10-18 at 9 07 29 PM](https://github.com/user-attachments/assets/a8456766-ffb6-4424-8fa6-b32c10b24fc5)
+![Screen Shot 2024-10-18 at 9 09 34 PM](https://github.com/user-attachments/assets/e154c49e-8ab8-4122-aaa1-694902aff828)
+![Screen Shot 2024-10-18 at 9 11 07 PM](https://github.com/user-attachments/assets/cdd2420f-2c14-4d62-9da3-e04a5da052c0)
+![Screen Shot 2024-10-18 at 9 12 07 PM](https://github.com/user-attachments/assets/316d1f41-db6a-455f-a43c-950329754519)
+
+/p>
+<br />
+
+</p>
+<p>
+
+Setup Remote Desktop for non-administrative users on Client-1
+—
+Log into Client-1 as mydomain.com\jane_admin
+Open system properties
+Click “Remote Desktop”
+Allow “domain users” access to remote desktop
+You can now log into Client-1 as a normal, non-administrative user now
+
+
+</p>
+<p>
+
+![Screen Shot 2024-10-18 at 9 20 55 PM](https://github.com/user-attachments/assets/fd1a5e01-3f4f-4e28-8534-c559d0e07bf2)
+![Screen Shot 2024-10-18 at 9 22 38 PM](https://github.com/user-attachments/assets/d1566a11-b1ef-4bbc-8ee4-dc19104e1013)
+![Screen Shot 2024-10-18 at 9 23 53 PM](https://github.com/user-attachments/assets/db7309f0-6f62-427d-a1b2-efec96f09099)
+![Screen Shot 2024-10-18 at 9 25 01 PM](https://github.com/user-attachments/assets/5bcdaf17-be6e-4829-8eb8-fd605e798b25)
+
+/p>
+<br />
+
+</p>
+<p>
+
+Create additional users and attempt to log into Client-1 with one of the users to do that you will..
+Login to DC-1 as jane_admin
+Open PowerShell_ise as an administrator
+Create a new File and paste the contents of the script into it
+Run the script and observe the accounts being created
+When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES)
+attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+
+</p>
+<p>
+
+![Screen Shot 2024-10-18 at 9 39 51 PM](https://github.com/user-attachments/assets/09c0e5c0-7557-4d86-951f-333f927b1d23)
+![Screen Shot 2024-10-18 at 9 41 22 PM](https://github.com/user-attachments/assets/8f8f669b-0bb5-4a38-bb3a-e301b40a9677)
+![Screen Shot 2024-10-18 at 9 42 37 PM](https://github.com/user-attachments/assets/252f79f4-c458-4d76-9ee9-6916b5f20fd2)
+![Screen Shot 2024-10-18 at 9 42 57 PM](https://github.com/user-attachments/assets/ca012445-d0ab-4944-ade0-004e95a11bbf)
+![Screen Shot 2024-10-18 at 9 43 08 PM](https://github.com/user-attachments/assets/dc22ecf5-b9a5-4685-a726-dabca90e4a47)
+![Screen Shot 2024-10-18 at 9 44 50 PM](https://github.com/user-attachments/assets/888bf7e8-7dd5-43c1-81cf-9d16b79ea15b)
 
 
 
